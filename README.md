@@ -14,6 +14,12 @@ Open http://127.0.0.1:4175/. Every page has a direct URL, such as `?slide=13`. B
 
 ## GitHub Pages
 
+Repository: https://github.com/oracle-ai-workshop/fusion-cloud-ai-adoption
+
+Website: https://oracle-ai-workshop.github.io/fusion-cloud-ai-adoption/
+
+The repository and website are public. GitHub Pages uses the included GitHub Actions workflow; pushing to `main` automatically deploys updates.
+
 This folder is a complete publishing root. It has no hardcoded username, repository name, host, or absolute asset paths. It works at both `https://USER.github.io/` and `https://USER.github.io/REPOSITORY/`.
 
 1. Copy **the contents of `site_upd/`**, including `.github/` and `.nojekyll`, to the root of the eventual repository.
@@ -42,4 +48,4 @@ Oracle's theme documentation: https://docs.oracle.com/en/middleware/developer-to
 
 The parent project's `scripts/validate-site-upd.py` checks the HTML against both the extracted content and original PowerPoint, source asset hashes, links and relative resource paths. Browser QA records are in `../verification_upd/`; the QA report is `design-qa.md` in this folder.
 
-Original content, fonts, artwork and marks remain subject to their respective owners' terms. Oracle JET and its runtime dependencies retain their supplied license notices. No live deployment or account configuration has been performed.
+Original content, fonts, artwork and marks remain subject to their respective owners' terms. Oracle JET and its runtime dependencies retain their supplied license notices.

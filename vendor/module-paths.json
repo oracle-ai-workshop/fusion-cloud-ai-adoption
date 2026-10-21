@@ -1,0 +1,18 @@
+{
+  "ojs": "jet/min",
+  "ojL10n": "jet/ojL10n",
+  "ojtranslations": "jet/resources",
+  "@oracle/oraclejet-preact": "jet-preact",
+  "jqueryui-amd": "jquery-ui",
+  "preact/hooks": "preact/hooks",
+  "preact/compat": "preact/compat",
+  "preact/jsx-runtime": "preact/jsx-runtime",
+  "preact": "preact/preact",
+  "jquery": "jquery",
+  "knockout": "knockout",
+  "text": "text",
+  "css": "css",
+  "signals": "signals",
+  "hammerjs": "hammer",
+  "ojdnd": "dnd"
+}

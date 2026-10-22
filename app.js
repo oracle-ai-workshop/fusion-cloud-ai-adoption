@@ -20,6 +20,7 @@ window.workshopReady = new Promise((resolve, reject) => require([
     const nav = document.getElementById('workshop-nav');
     const parts = document.getElementById('part-navigation');
     const dialog = document.getElementById('image-dialog');
+    const demoDialog = document.getElementById('demo-dialog');
     const dialogImage = document.getElementById('dialog-image');
     const previous = document.getElementById('previous-button');
     const next = document.getElementById('next-button');
@@ -71,11 +72,13 @@ window.workshopReady = new Promise((resolve, reject) => require([
       if(image)openImage(image.dataset.image,articles[current-1].querySelector('h1').textContent.trim());
     });
     document.getElementById('close-image').addEventListener('ojAction', () => dialog.close());
-    dialog.addEventListener('click', event => {
-      if (event.target !== dialog) return;
-      const bounds = dialog.getBoundingClientRect();
-      if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
-    });
+    document.getElementById('demo-environment-button').addEventListener('ojAction', () => demoDialog.showModal());
+    demoDialog.querySelectorAll('[data-close-demo]').forEach(button => button.addEventListener('ojAction', () => demoDialog.close()));
+    [dialog, demoDialog].forEach(popup => popup.addEventListener('click', event => {
+      if (event.target !== popup) return;
+      const bounds = popup.getBoundingClientRect();
+      if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) popup.close();
+    }));
     previous.addEventListener('ojAction', () => current > 1 && go(current-1));
     next.addEventListener('ojAction', () => current < 45 && go(current+1));
     document.getElementById('menu-button').addEventListener('ojAction', () => {
@@ -85,7 +88,7 @@ window.workshopReady = new Promise((resolve, reject) => require([
     window.addEventListener('popstate', () => render(true));
     document.addEventListener('keydown', event => {
       if(event.key==='Escape')document.body.classList.remove('nav-open');
-      if(event.target.closest('input,textarea,select,button,a,[role="tree"],[role="tablist"],oj-dialog') || dialog.open)return;
+      if(event.target.closest('input,textarea,select,button,a,[role="tree"],[role="tablist"],oj-dialog') || document.querySelector('dialog[open]'))return;
       if(event.key==='ArrowRight' && current<45){event.preventDefault();go(current+1);}
       if(event.key==='ArrowLeft' && current>1){event.preventDefault();go(current-1);}
     });

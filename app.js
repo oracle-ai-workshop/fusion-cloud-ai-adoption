@@ -69,10 +69,6 @@ window.workshopReady = new Promise((resolve, reject) => require([
       const image=event.target.closest('[data-image]');
       if(image)openImage(image.dataset.image,image.querySelector('img').alt);
     });
-    document.querySelectorAll('[data-original]').forEach(button => button.addEventListener('ojAction', () => {
-      const number=Number(button.dataset.original);
-      openImage('assets/slides/slide-'+String(number).padStart(2,'0')+'.webp','Original slide '+number+' — '+articles[number-1].querySelector('h1').textContent.trim());
-    }));
     document.getElementById('close-image').addEventListener('ojAction', () => dialog.close());
     previous.addEventListener('ojAction', () => current > 1 && go(current-1));
     next.addEventListener('ojAction', () => current < 45 && go(current+1));

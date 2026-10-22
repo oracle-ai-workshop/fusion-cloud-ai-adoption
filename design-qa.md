@@ -2,6 +2,17 @@
 
 final result: passed
 
+## October 22, 2026 layout update
+
+The fixed shared footer aligns the sidebar brand/copyright area with Previous/Next navigation and keeps the controls visible during scrolling. The header's extra Enable & Test label and all original-slide controls were removed. Repeated slide copyright/page-number footers remain hidden for source-content auditing; one copyright notice is displayed in the shared footer.
+
+Screenshots now stack before their columns fall below 520 CSS pixels, and use the full available content width when the viewport is smaller. Resource-card art and text also stack when the main content area is narrow. Original artwork, instructional wording, fonts and official Redwood CSS are unchanged.
+
+All 45 routes passed at 1244 and 390 CSS pixels; resource and exercise pages also passed at 768, 1024 and 1600 CSS pixels. Checks cover overflow, fixed-footer position, matching desktop footer heights, screenshot column widths, removed controls and one visible copyright notice. Evidence: `../verification_upd/layout-1244.json`, `layout-390.json`, `layout-breakpoints.json` and `layout-side-by-side.png`. The source-content validator still passes all 434 paragraphs, 27 destinations and 110 original assets.
+
+The earlier original-slide interaction and initial deployment notes below describe the October 21 implementation before this update.
+
+
 Source: `../powerpoint.pptx`, 45 portrait pages. The presentation was inspected in Microsoft PowerPoint and exported locally to PDF with the printing option; no online export service was used. The source presentation was not edited.
 
 Implementation: http://127.0.0.1:4175/

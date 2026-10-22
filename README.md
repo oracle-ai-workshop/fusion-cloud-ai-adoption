@@ -1,6 +1,6 @@
 # Oracle AI Adoption Workshop
 
-A static, responsive website containing all 45 pages of `powerpoint.pptx`, in their original order. Content is reflowed into a workshop with a persistent contents tree, page navigation, exercise page selectors, screenshot enlargement, and an original-slide viewer.
+A static, responsive website containing all 45 pages of `powerpoint.pptx`, in their original order. Content is reflowed into a workshop with a persistent contents tree, page navigation, exercise page selectors, screenshot enlargement, and fixed Previous/Next navigation.
 
 ## Preview
 
@@ -10,7 +10,7 @@ From the parent project folder:
 python3 -m http.server 4175 --bind 127.0.0.1 --directory site_upd
 ```
 
-Open http://127.0.0.1:4175/. Every page has a direct URL, such as `?slide=13`. Browser Back/Forward works. On phones, the Contents button opens the navigation drawer.
+Open http://127.0.0.1:4175/. Every page has a direct URL, such as `?slide=13`. Browser Back/Forward works. On phones, the Contents button opens the navigation drawer. Screenshots stack vertically before their columns fall below 520 CSS pixels (or use the full available width on smaller screens). The fixed footer keeps Previous/Next visible and aligns the sidebar footer with the main navigation.
 
 ## GitHub Pages
 
@@ -44,7 +44,7 @@ Oracle's theme documentation: https://docs.oracle.com/en/middleware/developer-to
 
 `index.html` contains all 45 articles as HTML. `content.json` records the extracted source paragraphs, runs, hyperlinks, image references and layout coordinates. Every original paragraph is tagged with `data-source` in the HTML. All 434 paragraphs and 27 distinct external link destinations are preserved; source spelling and wording are retained. The occluded `ink` text object on page 4 is retained in the audit data and a hidden DOM element, matching its invisible source state.
 
-`asset-provenance.json` records the source presentation hash, the 110 original media hashes, font provenance and official Redwood package version. `View original slide` opens the page as rendered by PowerPoint. The source presentation itself is unchanged.
+`asset-provenance.json` records the source presentation hash, the 110 original media hashes, font provenance and official Redwood package version. Original-slide previews remain archived under `assets/slides/`; the viewer control has been removed. The source presentation itself is unchanged. Repeated source copyright and page-number paragraphs remain in hidden audit markup; the shared fixed footer displays the copyright once.
 
 The parent project's `scripts/validate-site-upd.py` checks the HTML against both the extracted content and original PowerPoint, source asset hashes, links and relative resource paths. Browser QA records are in `../verification_upd/`; the QA report is `design-qa.md` in this folder.
 

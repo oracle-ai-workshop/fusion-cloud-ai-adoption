@@ -33,6 +33,7 @@ window.workshopReady = new Promise((resolve, reject) => require([
       articles.forEach(article => { article.hidden = Number(article.dataset.slide) !== current; });
       const article = articles[current-1];
       document.body.dataset.theme = article.dataset.theme;
+      document.querySelector('.workshop-footer').classList.toggle('oj-color-invert', article.dataset.theme === 'dark');
       document.title = article.querySelector('h1').textContent.trim() + ' | Oracle AI Adoption Workshop';
       nav.selection = 'nav-' + navKey(current);
       previous.disabled = current === 1;
@@ -67,9 +68,14 @@ window.workshopReady = new Promise((resolve, reject) => require([
       const link=event.target.closest('[data-slide-link]');
       if (link && !event.metaKey && !event.ctrlKey && !event.shiftKey && !event.altKey) {event.preventDefault();go(Number(link.dataset.slideLink));}
       const image=event.target.closest('[data-image]');
-      if(image)openImage(image.dataset.image,image.querySelector('img').alt);
+      if(image)openImage(image.dataset.image,articles[current-1].querySelector('h1').textContent.trim());
     });
     document.getElementById('close-image').addEventListener('ojAction', () => dialog.close());
+    dialog.addEventListener('click', event => {
+      if (event.target !== dialog) return;
+      const bounds = dialog.getBoundingClientRect();
+      if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) dialog.close();
+    });
     previous.addEventListener('ojAction', () => current > 1 && go(current-1));
     next.addEventListener('ojAction', () => current < 45 && go(current+1));
     document.getElementById('menu-button').addEventListener('ojAction', () => {

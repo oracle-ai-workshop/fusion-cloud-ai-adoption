@@ -72,7 +72,19 @@ window.workshopReady = new Promise((resolve, reject) => require([
       if(image)openImage(image.dataset.image,articles[current-1].querySelector('h1').textContent.trim());
     });
     document.getElementById('close-image').addEventListener('ojAction', () => dialog.close());
-    document.getElementById('demo-environment-button').addEventListener('ojAction', () => demoDialog.showModal());
+    const copyStatus = document.getElementById('demo-copy-status');
+    document.getElementById('demo-environment-button').addEventListener('ojAction', () => {
+      copyStatus.textContent = '';
+      demoDialog.showModal();
+    });
+    demoDialog.querySelectorAll('[data-copy-target]').forEach(button => button.addEventListener('ojAction', async () => {
+      try {
+        await navigator.clipboard.writeText(document.getElementById(button.dataset.copyTarget).textContent);
+        copyStatus.textContent = button.dataset.copyLabel + ' copied.';
+      } catch {
+        copyStatus.textContent = 'Could not copy. Select the text to copy it.';
+      }
+    }));
     demoDialog.querySelectorAll('[data-close-demo]').forEach(button => button.addEventListener('ojAction', () => demoDialog.close()));
     [dialog, demoDialog].forEach(popup => popup.addEventListener('click', event => {
       if (event.target !== popup) return;

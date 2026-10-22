@@ -64,7 +64,7 @@ body[data-theme="dark"] .workshop-footer{background:rgba(16,28,21,.38);border-to
 .demo-detail dd{margin:0;min-width:0;font-size:16px;overflow-wrap:anywhere}
 .demo-detail code{font:inherit;user-select:all}
 .demo-detail a{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:600}
-.demo-password{letter-spacing:3px}
+
 @media(max-width:600px){
   .demo-trigger{width:100px;font-size:10px;letter-spacing:.5px}
   .demo-trigger .oj-button-text{white-space:normal;line-height:1.25;text-align:center}
@@ -73,3 +73,9 @@ body[data-theme="dark"] .workshop-footer{background:rgba(16,28,21,.38);border-to
   .demo-details{padding:20px 24px}
   .demo-detail{grid-template-columns:76px minmax(0,1fr);gap:12px;padding:16px}
 }
+
+.demo-credential{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.demo-copy{flex-shrink:0;font-size:12px}
+.demo-dialog-footer{justify-content:space-between;gap:16px}
+#demo-copy-status{margin:0;font-size:12px;line-height:1.5;color:var(--oj-core-text-color-secondary)}
+@media(max-width:380px){.demo-credential{grid-column:1/-1}.demo-detail:has(.demo-credential){gap:6px}}

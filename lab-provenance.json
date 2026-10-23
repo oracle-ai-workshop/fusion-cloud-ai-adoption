@@ -135,6 +135,13 @@
       "path": "assets/labs/sourcing-command-center.png",
       "source": "User-provided Screenshot 2026-10-23 at 11.27.36.png",
       "sha256": "306708c5dcb8514a6c883ef3ede066eada863b7760cbf41020b514a481a6a139"
+    },
+    {
+      "id": 49,
+      "title": "Project Delivery Assurance Workspace",
+      "path": "assets/labs/project-delivery-assurance-workspace.png",
+      "source": "User-provided Screenshot 2026-10-23 at 11.41.16.png",
+      "sha256": "5e31698b981f07cac9eb4ab7e4ffa075d47b5ff6f96ac2fae6d5ba2eac2f46af"
     }
   ]
 }

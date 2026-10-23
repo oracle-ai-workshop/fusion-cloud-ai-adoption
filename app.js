@@ -29,8 +29,8 @@ window.workshopReady = new Promise((resolve, reject) => require([
     const previous = document.getElementById('previous-button');
     const next = document.getElementById('next-button');
     let current = 1;
-    const navKey = number => number >= 46 && number <= 48 ? 46 : number >= 7 && number <= 8 ? 7 : number >= 13 && number <= 19 ? 13 : number >= 20 && number <= 32 ? 20 : number >= 33 && number <= 43 ? 33 : number;
-    const partGroup = number => [[7,8], [46,48], [13,19], [20,32], [33,43]].find(([first,last]) => number >= first && number <= last);
+    const navKey = number => number >= 46 && number <= 49 ? 46 : number >= 7 && number <= 8 ? 7 : number >= 13 && number <= 19 ? 13 : number >= 20 && number <= 32 ? 20 : number >= 33 && number <= 43 ? 33 : number;
+    const partGroup = number => [[7,8], [46,49], [13,19], [20,32], [33,43]].find(([first,last]) => number >= first && number <= last);
     function render(focus = false) {
       const parameter = new URLSearchParams(location.search).get('slide');
       const requested = parameter && /^\d+$/.test(parameter) ? Number(parameter) : 1;

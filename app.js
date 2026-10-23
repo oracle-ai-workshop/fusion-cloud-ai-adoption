@@ -134,7 +134,7 @@ window.workshopReady = new Promise((resolve, reject) => require([
       if(event.key==='ArrowRight' && current<articles.length){event.preventDefault();go(current+1);}
       if(event.key==='ArrowLeft' && current>1){event.preventDefault();go(current-1);}
     });
-    nav.expanded = new KeySet.KeySetImpl(['nav-3','nav-5','nav-12','nav-44']);
+    nav.expanded = new KeySet.KeySetImpl(['nav-3','nav-5','nav-12','nav-create-agentic-apps','nav-44']);
     ko.applyBindings({},document.body);
     await Context.getContext(document.body).getBusyContext().whenReady();
     render();

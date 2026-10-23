@@ -143,5 +143,172 @@
       "source": "User-provided Screenshot 2026-10-23 at 11.41.16.png",
       "sha256": "5e31698b981f07cac9eb4ab7e4ffa075d47b5ff6f96ac2fae6d5ba2eac2f46af"
     }
+  ],
+  "documentPages": [
+    {
+      "id": 50,
+      "title": "Sales Command Center",
+      "sourceDocument": "Prompts_SalesCommandCenter_Basic.docx",
+      "documentSha256": "d0a88fabb37600f19b9686c38a2f98918681d9f0dc10c8ba4dcf05d69d92d3f2",
+      "sourceVideo": "video4483761456.mp4",
+      "videoSha256": "af372545e84cd369cba1b09486a6acfbd5d8e4cc9f862b0fe453ba9563201063",
+      "paragraphs": [
+        {
+          "index": 0,
+          "text": "Create a sales workspace that helps me identify which opportunities need attention first."
+        },
+        {
+          "index": 1,
+          "text": "Start with one section called “Priority Opportunities”, using any existing published workflow that is relevant."
+        },
+        {
+          "index": 2,
+          "text": "Show the workflow’s opportunity list and priority explanations when the application opens. Let me use Ask Oracle to explore these opportunities and understand recommended next steps."
+        },
+        {
+          "index": 3,
+          "text": "=="
+        },
+        {
+          "index": 4,
+          "text": "Choose - Opportunity Health and Prioritization Agent"
+        },
+        {
+          "index": 5,
+          "text": "Enhancements prompts:"
+        },
+        {
+          "index": 6,
+          "text": "1. "
+        },
+        {
+          "index": 7,
+          "text": "Add a “Strategic Accounts” section below “Priority Opportunities” to help me identify which customer accounts deserve attention."
+        },
+        {
+          "index": 8,
+          "text": "Show up to five accounts with:"
+        },
+        {
+          "index": 9,
+          "text": "Account name."
+        },
+        {
+          "index": 10,
+          "text": "Key risks, growth opportunities, or approaching renewals, where information is available."
+        },
+        {
+          "index": 11,
+          "text": "A short explanation of why each account deserves attention."
+        },
+        {
+          "index": 12,
+          "text": "A suggested next step supported by the available information."
+        },
+        {
+          "index": 13,
+          "text": "Let me use Ask Oracle to explore these accounts, understand the recommendations, and prepare for customer conversations."
+        },
+        {
+          "index": 14,
+          "text": "Use actual available Sales data and clearly indicate missing information. Keep the experience informational, with business records unchanged and no emails sent."
+        },
+        {
+          "index": 15,
+          "text": "Keep the existing Priority Opportunities section working. Use English throughout and prepare the enhanced application for preview."
+        },
+        {
+          "index": 18,
+          "text": "2. "
+        },
+        {
+          "index": 19,
+          "text": "Add a “Pre-Meeting Briefs” section to help me prepare for upcoming customer conversations."
+        },
+        {
+          "index": 20,
+          "text": "Show up to four customer meetings scheduled for the next seven days, including:"
+        },
+        {
+          "index": 21,
+          "text": "Meeting title, date, and time."
+        },
+        {
+          "index": 22,
+          "text": "Customer account and related opportunity, where available."
+        },
+        {
+          "index": 23,
+          "text": "A short preparation brief covering relevant recent developments, key risks or opportunities, and suggested talking points."
+        },
+        {
+          "index": 24,
+          "text": "Three suggested questions to ask the customer."
+        },
+        {
+          "index": 25,
+          "text": "Let me use Ask Oracle to prepare for a specific meeting, explore the supporting account or opportunity information, and draft a customer follow-up message for review."
+        },
+        {
+          "index": 26,
+          "text": "Use actual available Sales and meeting data. Clearly identify missing information and distinguish having no upcoming meetings from being unable to retrieve them."
+        },
+        {
+          "index": 27,
+          "text": "Keep Priority Opportunities and Strategic Accounts working. Use a clear two-column layout, with those sections on the left and Pre-Meeting Briefs on the right."
+        },
+        {
+          "index": 28,
+          "text": "Use English throughout. Keep business records unchanged and display follow-up messages as text without sending them. Prepare the enhanced application for preview."
+        }
+      ],
+      "figures": [
+        {
+          "path": "assets/labs/sales-command-center/priority-workflow.png",
+          "timeSeconds": 230,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "36ba246959648df954603b89565b20353578b233db0ca7014fa175bc3e1ff911"
+        },
+        {
+          "path": "assets/labs/sales-command-center/priority-opportunities.png",
+          "timeSeconds": 220,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "07d2a2218821bb6678c31eaed1164b931c2b6341e4f686d3d2d387dac5244df1"
+        },
+        {
+          "path": "assets/labs/sales-command-center/strategic-accounts.png",
+          "timeSeconds": 330,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "b7b0703f7a8e2f3ca35841e354819dd19e98ff4a0f221c9aef8d2728b63af4a1"
+        },
+        {
+          "path": "assets/labs/sales-command-center/pre-meeting-briefs.png",
+          "timeSeconds": 426,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "bf16fa209b89a090563e67a5c60cb2c377cb6c8d21fdf8e5f150163b4612ffe7"
+        }
+      ],
+      "notes": "Only application pixels are included in each frame; the webcam tile, browser toolbar and desktop taskbar are outside the crop. All nonempty Word body paragraphs are preserved in source order."
+    }
   ]
 }

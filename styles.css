@@ -48,7 +48,8 @@ body[data-theme="dark"]{background-color:#1d3326}
 
 body[data-theme="dark"] .workshop-footer{background:rgba(16,28,21,.38);border-top-color:#ffffff30}
 
-.demo-trigger{margin-left:auto;flex-shrink:0;font-size:12px;letter-spacing:.7px}
+.header-actions{margin-left:auto;display:flex;align-items:center;gap:12px;flex-shrink:0}
+.demo-trigger{flex-shrink:0;font-size:12px;letter-spacing:.7px}
 .workshop-name{min-width:0}
 #demo-dialog{width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:0;overflow:auto;border:1px solid var(--oj-core-divider-color);border-radius:var(--oj-core-border-radius-lg);background:var(--oj-core-bg-color-content);color:var(--oj-core-text-color-primary);box-shadow:0 24px 80px #0004}
 #demo-dialog::backdrop{background:#0008;backdrop-filter:blur(4px)}
@@ -102,3 +103,6 @@ body[data-theme="dark"] .workshop-footer{background:rgba(16,28,21,.38);border-to
 .lab-section .screenshot img{width:100%;height:auto}
 @media(max-width:1200px){.lab-content{padding-left:32px;padding-right:32px}}
 @media(max-width:600px){.lab-content{padding:0 22px 24px}.lab-section h2{font-size:24px}.lab-section h3{font-size:21px}}
+
+@media(max-width:600px){.header-actions{gap:8px}.demo-trigger{width:92px;font-size:10px;letter-spacing:0}#demo-environment-button{width:104px}.demo-trigger .oj-button-text{padding-left:10px;padding-right:10px}}
+@media(max-width:380px){.workshop-header .workshop-name{display:none}}

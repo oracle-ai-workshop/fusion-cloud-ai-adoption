@@ -53,7 +53,14 @@ body[data-theme="dark"] .workshop-footer{background:rgba(16,28,21,.38);border-to
 #demo-dialog{width:min(520px,calc(100vw - 32px));max-height:calc(100dvh - 32px);padding:0;overflow:auto;border:1px solid var(--oj-core-divider-color);border-radius:var(--oj-core-border-radius-lg);background:var(--oj-core-bg-color-content);color:var(--oj-core-text-color-primary);box-shadow:0 24px 80px #0004}
 #demo-dialog::backdrop{background:#0008;backdrop-filter:blur(4px)}
 .demo-dialog-header{position:relative;padding:30px 30px 24px;border-bottom:1px solid var(--oj-core-divider-color)}
-.demo-dialog-symbol{display:flex;align-items:center;justify-content:center;width:44px;height:44px;margin-bottom:24px;border-radius:var(--oj-core-border-radius-lg);background:#1d3326;color:white;font-size:22px}
+.demo-tabs{display:flex;gap:10px;margin-bottom:24px;width:fit-content}
+.demo-dialog-symbol{display:flex;align-items:center;justify-content:center;width:44px;height:44px;padding:0;border:1px solid var(--oj-core-divider-color);border-radius:var(--oj-core-border-radius-lg);background:transparent;color:var(--oj-core-text-color-secondary);font-size:22px;cursor:pointer;transition:background .18s,color .18s,box-shadow .18s}
+.demo-tab-icon{display:block;width:26px;height:26px;background:currentColor;-webkit-mask:var(--demo-tab-image) center/contain no-repeat;mask:var(--demo-tab-image) center/contain no-repeat}
+.demo-tab-chip{--demo-tab-image:url("assets/icons/ico-ai-chip.svg")}
+.demo-tab-layers{--demo-tab-image:url("assets/icons/ico-ai-layers.svg")}
+.demo-dialog-symbol:hover{background:rgb(var(--oj-palette-neutral-rgb-20))}
+.demo-dialog-symbol[aria-selected="true"]{background:#1d3326;border-color:#1d3326;color:white;box-shadow:0 3px 8px #1d332626}
+.demo-dialog-symbol:focus-visible{outline:2px solid var(--oj-core-text-color-brand);outline-offset:3px}
 .demo-dialog-dismiss{position:absolute;top:16px;right:16px}
 .demo-dialog-kicker{margin:0 0 8px;font-size:10px;font-weight:600;letter-spacing:1.6px;color:var(--oj-core-text-color-secondary)}
 .demo-dialog-header h2{margin:0 0 10px;font-size:28px;line-height:1.2;font-weight:600;letter-spacing:-.5px}
@@ -79,3 +86,19 @@ body[data-theme="dark"] .workshop-footer{background:rgba(16,28,21,.38);border-to
 .demo-dialog-footer{justify-content:space-between;gap:16px}
 #demo-copy-status{margin:0;font-size:12px;line-height:1.5;color:var(--oj-core-text-color-secondary)}
 @media(max-width:380px){.demo-credential{grid-column:1/-1}.demo-detail:has(.demo-credential){gap:6px}}
+
+/* Continuous labs use the workshop typography, screenshot panels and image viewer. */
+.lab-content{max-width:1320px;margin:0 auto;padding:0 48px 40px}
+.lab-section{padding:24px 0;border-top:1px solid var(--oj-core-divider-color)}
+.lab-section:first-child{padding-top:0;border-top:0}
+.lab-section h2{font-size:28px;line-height:1.25;margin:0 0 20px;font-weight:600}
+.lab-section h3{font-size:23px;line-height:1.35;margin:0 0 20px;font-weight:600}
+.lab-section p{margin:0 0 18px}
+.lab-section ul,.lab-section ol{padding-left:26px;margin:0 0 20px}
+.lab-section li{margin:8px 0}
+.lab-section pre{padding:18px 22px;background:rgb(var(--oj-palette-neutral-rgb-10));border:1px solid var(--oj-core-divider-color);border-radius:var(--oj-core-border-radius-md);white-space:pre-wrap;overflow-wrap:anywhere;margin:20px 0}
+.lab-section code{font-size:14px}
+.lab-section .screenshot{margin:24px 0;max-width:100%}
+.lab-section .screenshot img{width:100%;height:auto}
+@media(max-width:1200px){.lab-content{padding-left:32px;padding-right:32px}}
+@media(max-width:600px){.lab-content{padding:0 22px 24px}.lab-section h2{font-size:24px}.lab-section h3{font-size:21px}}

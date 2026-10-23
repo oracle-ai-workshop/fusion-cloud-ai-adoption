@@ -1,0 +1,140 @@
+{
+  "labs": [
+    {
+      "id": 46,
+      "title": "Embedded and Generative AI in CX",
+      "source": "lab-1-sales-automation.md",
+      "next": 47,
+      "sourceSha256": "c2d9c2a41eab2caecff88a7596c530526c6686079dc878f857fc081e82649f53"
+    },
+    {
+      "id": 47,
+      "title": "Generative AI in HCM",
+      "source": "lab-2-hcm-give-feedback.md",
+      "next": 48,
+      "sourceSha256": "3ddb98d9b3ccf603a01aff32f9590d58054192395e026cd5561642565f277806"
+    }
+  ],
+  "assets": [
+    {
+      "source": "site/assets/images/exercise-1-1-step-01.png",
+      "path": "assets/labs/exercise-1-1-step-01.png",
+      "sha256": "cba9e5b2cec299e0c84f28a3f7e24f9be48f327cc0dc47da243ad38fd6627586"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-02.png",
+      "path": "assets/labs/exercise-1-1-step-02.png",
+      "sha256": "588373b209c5525c42e4516eb9654d4aa2c8f8962f17fecff95018cefa6ce6b8"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-03.png",
+      "path": "assets/labs/exercise-1-1-step-03.png",
+      "sha256": "bcefc84f6eccc543b42cc24ebb7a800b45db656d694ff2e3e26d18c48202ecac"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-04.png",
+      "path": "assets/labs/exercise-1-1-step-04.png",
+      "sha256": "ee634ec728a9bebc6eab31a546ed5df254ed15333db896e36e7cec169cc93fbd"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-05.png",
+      "path": "assets/labs/exercise-1-1-step-05.png",
+      "sha256": "234976e1d9ef06e06edb505f7cebec36bae598e74dc6b222f1a4b078fc1c2835"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-06.png",
+      "path": "assets/labs/exercise-1-1-step-06.png",
+      "sha256": "6c158d2a71111b0aff9e3eb85a555af7df436f8f7bdc318ef70f722cc04b6731"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-07.png",
+      "path": "assets/labs/exercise-1-1-step-07.png",
+      "sha256": "da7bf38df6e4d16adbd4e7a0ae7622ca66347c88d65af6ece6cdfb68dedf6177"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-08.png",
+      "path": "assets/labs/exercise-1-1-step-08.png",
+      "sha256": "a7cec021e3db1ab04f98c5df78dd1ba9efd91b2f25cae8ac3c0c7f65008b45fc"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-09.png",
+      "path": "assets/labs/exercise-1-1-step-09.png",
+      "sha256": "1f4bd31484d6a6d89923b2ee83b758103ee2a6397acc1d9af08d8440eb403bdc"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-10.png",
+      "path": "assets/labs/exercise-1-1-step-10.png",
+      "sha256": "254200849e77af371fb4f492a7a35ee1a5fcdaffe73d752ee38f96c076232773"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-11.png",
+      "path": "assets/labs/exercise-1-1-step-11.png",
+      "sha256": "902575cbca507888faa734caf503d50019ba0ddc1ec0cca29713e612d58ef631"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-12.png",
+      "path": "assets/labs/exercise-1-1-step-12.png",
+      "sha256": "cc73e03907ee1c24d014e551be2fc7f25d68188eac240252afe5123d7fe1e280"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-13.png",
+      "path": "assets/labs/exercise-1-1-step-13.png",
+      "sha256": "745e75553c6dcd8632b5847931365a9d2c4649be128afd487eda58dcf7861789"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-14.png",
+      "path": "assets/labs/exercise-1-1-step-14.png",
+      "sha256": "bef1bdae1519d473edf75b2cbf5c7bd42d6191f8d4fb10358f2a76266423a10f"
+    },
+    {
+      "source": "site/assets/images/exercise-1-1-step-15.png",
+      "path": "assets/labs/exercise-1-1-step-15.png",
+      "sha256": "eca4684dc6634e7e3cd9b81c04d0e71ad68bd692ebbcd48bd7515b880370ea97"
+    },
+    {
+      "source": "site/assets/images/exercise-1-2-FB-step-01.png",
+      "path": "assets/labs/exercise-1-2-FB-step-01.png",
+      "sha256": "d809ffd15f2229eb4e58336f0c0ca2f409882459c47633e4d7dab3432a430125"
+    },
+    {
+      "source": "site/assets/images/exercise-1-2-FB-step-02.png",
+      "path": "assets/labs/exercise-1-2-FB-step-02.png",
+      "sha256": "7b842429ae2f2c9e6c2595d5b1bb81d23a732339cc171fee0feebadb363ae0ba"
+    },
+    {
+      "source": "site/assets/images/exercise-1-2-FB-step-03.png",
+      "path": "assets/labs/exercise-1-2-FB-step-03.png",
+      "sha256": "c05e9b559e7a5b0d81d2b702154c90cfe3bc1a8bf3a9bbbf14737d6157c5d7fa"
+    },
+    {
+      "source": "site/assets/images/exercise-1-2-FB-step-04.png",
+      "path": "assets/labs/exercise-1-2-FB-step-04.png",
+      "sha256": "4c9b3a37c5c950ccdf1618b7ea04cb523586b3e351117bb971a77fb683711eb4"
+    },
+    {
+      "source": "site/assets/images/exercise-1-2-FB-step-05.png",
+      "path": "assets/labs/exercise-1-2-FB-step-05.png",
+      "sha256": "86b296b2b10fee4d3324d898f0c5a20c33f1b69dcc646da7c4d2d5b0d5e3b512"
+    },
+    {
+      "source": "site/assets/images/exercise-1-2-FB-step-06.png",
+      "path": "assets/labs/exercise-1-2-FB-step-06.png",
+      "sha256": "efa219f149d7e9f890c9f4457d41ae86c70fa2dbbe29bcb7d3ef9f37c4201564"
+    },
+    {
+      "source": "site/assets/images/exercise-1-2-FB-step-07.png",
+      "path": "assets/labs/exercise-1-2-FB-step-07.png",
+      "sha256": "6d5db7aab356ba5ee232395154983cb35472097018f4ebfb902a2e9bc46ed37b"
+    }
+  ],
+  "notes": "Acknowledgements omitted. All CX steps, including the commented Sales Command Center section, are included. Copy markers and separator comments are presentation markup; original instructional text is preserved.",
+  "supplementalPages": [
+    {
+      "id": 48,
+      "title": "Sourcing Command Center",
+      "path": "assets/labs/sourcing-command-center.png",
+      "source": "User-provided Screenshot 2026-10-23 at 11.27.36.png",
+      "sha256": "306708c5dcb8514a6c883ef3ede066eada863b7760cbf41020b514a481a6a139"
+    }
+  ]
+}

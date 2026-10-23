@@ -2,6 +2,19 @@
 
 final result: passed
 
+## October 23, 2026 Generative AI labs
+
+The group now also has a third page, Sourcing Command Center (`?slide=48`), containing only the requested title and supplied image. The image was copied unchanged at 2476 × 1568 pixels and opens at full resolution in the shared viewer. The page selector, previous HCM page and following chapter navigation passed; the screenshot has no horizontal overflow. The site now has 48 pages. Evidence: `../verification_upd/sourcing-command-center.png` and `sourcing-checks.json`. This addition is local only.
+
+
+Added the regular Generative AI in Fusion and Agentic Apps submenu immediately after ERP, with two pages using the existing exercise page selector. CX includes all 14 steps (including the saved source's commented Sales Command Center instructions); HCM includes all five steps. Introductory sections, prerequisites, objectives and summaries remain in source order. Acknowledgements are omitted. Copy markers and HTML separator comments are treated as presentation markup. All instructional text matches the rendered source in order.
+
+Copied all 22 lab images byte-for-byte into `assets/labs/`. `lab-provenance.json` records the two source hashes and 22 image hashes. The pages reuse the workshop's fonts, Redwood theme, screenshot panels, image zoom and fixed footer. The 45 original PowerPoint route identifiers retain their content; new routes `?slide=46` and `?slide=47` appear as pages 12 and 13 in the 47-page reading order.
+
+Verification: all 47 pages traversed using Next; lab page selector, Previous through the insertion point and browser Back tested. Every imported image was opened in the image viewer and loaded successfully. Both labs passed 390px phone overflow, screenshot containment and footer position checks. Browser warning/error logs were empty. Content, local resource, source hash and repository-relative path validation passed. Evidence: `../verification_upd/generative-labs-checks.json`, `generative-cx-desktop.png`, `generative-hcm-desktop.png`, `generative-hcm-phone.png`.
+
+This update is local only; no commit, push or deployment was performed.
+
 ## October 22, 2026 layout update
 
 The fixed shared footer aligns the sidebar brand/copyright area with Previous/Next navigation and keeps the controls visible during scrolling. The header's extra Enable & Test label and all original-slide controls were removed. Repeated slide copyright/page-number footers remain hidden for source-content auditing; one copyright notice is displayed in the shared footer.

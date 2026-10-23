@@ -10,22 +10,25 @@ main{display:block;margin:0!important;padding:0!important;width:8.5in;min-height
 .lesson-heading{padding:10px 36px 24px;max-width:none;break-after:avoid}
 .lesson-heading h1{font-size:30px;line-height:1.2;margin:0 0 14px;max-width:none}
 .lesson-heading>p{font-size:15px;line-height:1.5}
-.lesson-grid{display:block;padding:0 36px;max-width:none}
+.lesson-grid{display:grid;grid-template-columns:minmax(0,1fr) calc(8.5in / 3);gap:24px;align-items:start;padding:0 36px;max-width:none}
 .lesson-copy{font-size:14px;line-height:1.55}
-.lesson-figures{display:block!important;margin-top:24px}
-.screenshot{display:block;break-inside:avoid;margin:0 0 20px!important;max-width:100%;overflow:visible}
+.lesson-figures{display:block!important;margin-top:0}
+.screenshot{display:block;break-inside:avoid;width:calc(8.5in / 3);margin:0 auto 20px!important;max-width:100%;overflow:visible}
 .figure-open{cursor:default;border:0;display:block;width:100%;padding:0;background:transparent}
 .screenshot img,.lab-section .screenshot img{display:block;width:100%;height:auto;max-height:8.5in;object-fit:contain}
 .resource-rows{display:block;padding:0 36px}
-.resource-row{display:block;padding:24px;break-inside:avoid;margin-bottom:20px}
+.resource-row{display:grid;grid-template-columns:minmax(0,1fr) calc(8.5in / 3);gap:24px;align-items:start;padding:24px;break-inside:avoid;margin-bottom:20px}
 .resource-row:last-child{margin-bottom:0}
-.resource-art{max-width:300px;margin:0 auto 20px}
+.resource-art{grid-column:2;grid-row:1;width:calc(8.5in / 3);max-width:100%;margin:0}
+.resource-copy{grid-column:1;grid-row:1;min-width:0}
 .resource-copy p{font-size:14px;line-height:1.5}
 .resource-directory{margin:0 36px;padding:8px 24px 24px}
 .directory-heading{font-size:16px;break-after:avoid}
 .directory-link{font-size:14px;line-height:1.5;break-inside:avoid}
 .lab-content{padding:0 36px;max-width:none}
 .lab-section{padding:22px 0;break-inside:avoid}
+.booklet-columns{display:grid;grid-template-columns:minmax(0,1fr) calc(8.5in / 3);gap:24px;align-items:start}
+.booklet-copy{min-width:0}
 .lab-section h2{font-size:23px}.lab-section h3{font-size:20px}
 .lab-section p{margin-bottom:14px}.lab-section li{margin:6px 0}
 .lab-section pre{white-space:pre-wrap;font-size:13px;break-inside:avoid}

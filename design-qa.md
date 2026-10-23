@@ -1,3 +1,19 @@
+## October 23, 2026 local slide 08 text replacement
+
+The two access-requirement screenshots on slide 08/50 were replaced with the supplied text, prerequisites, caution and documentation links. Existing introductory instructions and original source markers remain unchanged. Text uses the full instruction width in the website and booklet. The archived original image files remain available for source auditing.
+
+All nine page links use target="_blank" with noopener; the eight distinct destinations returned HTTP 200 with the expected documentation titles. An actual browser click opened a separate documentation tab. Desktop and 390px phone checks found no horizontal overflow. The regenerated 62-page booklet includes the complete supplied text and all expected URL annotations; prior text remains unchanged. Affected PDF pages 9–10 were rendered and reviewed. PDF readers control external-link window behavior. Evidence: `../verification_upd/access-text/`. This change is local only.
+
+## October 23, 2026 local workbook columns
+
+Resource cards, instructional pages and illustrated lab steps now pair text on the left with one-third-page-width images on the right. Text-only sections remain full width; the two image-only workspace pages remain centered. The PDF generator groups each illustrated lab step into two columns without changing its text. The website DOM and styling are unchanged.
+
+The local booklet has 61 pages, down from 64. All pages were visually reviewed, including a detailed check of the supplied Oracle AI Success Navigator example. Extracted instructional text matches the preceding booklet; 128 content images retain uniform width, with 126 on the right and two centered. Image instance counts and all 27 external destinations and eight internal links are preserved. No empty pages, missing resources or horizontal text/figure overflow were found. Evidence: `../verification_upd/workbook-columns/`. This refinement is local only.
+
+## October 23, 2026 local workbook image refinement
+
+Booklet screenshot panels and resource images now share a centered one-third-page width. Cover artwork and full-page backgrounds keep their established layout. Only the PDF stylesheet changes presentation; website styling and source content are untouched. The regenerated booklet has 64 pages, down from 101, with no empty pages. All rendered pages were reviewed. Extracted text, external destinations, internal chapter links and image instance counts match the previous booklet. Content images have a consistent rendered width and page center. Evidence: `../verification_upd/workbook-third/`. This refinement is local only.
+
 ## October 23, 2026 digital workbook
 
 Download Workbook now downloads the PDF generated from the current website articles during every publication. The dedicated layout uses portrait US Letter, zero outer page margins and full-page backgrounds, with no printer marks. Content retains design spacing. Browser controls and credential popups are excluded. External URLs remain PDF links, chapter URLs become internal destinations, and Chromium embeds selectable text, tags and a document outline.

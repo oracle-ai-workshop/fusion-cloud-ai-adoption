@@ -45,6 +45,21 @@ const root = path.resolve(__dirname, '..');
     page.on('response', response => { if (response.status() >= 400) failures.push(response.url()); });
     await page.goto(`http://127.0.0.1:${server.address().port}/__workbook.html`, {waitUntil:'networkidle'});
     await page.emulateMedia({media:'print'});
+    await page.evaluate(() => {
+      for (const section of document.querySelectorAll('.lab-section')) {
+        if (!section.querySelector(':scope > .screenshot') || !section.textContent.trim()) continue;
+        const text = section.textContent.replace(/\s/g, '');
+        const copy = document.createElement('div');
+        const figures = document.createElement('div');
+        copy.className = 'booklet-copy';
+        for (const node of [...section.childNodes]) {
+          (node.nodeType === 1 && node.matches('.screenshot') ? figures : copy).append(node);
+        }
+        section.classList.add('booklet-columns');
+        section.append(copy, figures);
+        if (section.textContent.replace(/\s/g, '') !== text) throw new Error('Booklet section text changed');
+      }
+    });
     await page.evaluate(async () => {
       await document.fonts.ready;
       await Promise.all([...document.images].map(img => img.decode()));

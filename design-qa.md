@@ -1,3 +1,11 @@
+## October 23, 2026 digital workbook
+
+Download Workbook now downloads the PDF generated from the current website articles during every publication. The dedicated layout uses portrait US Letter, zero outer page margins and full-page backgrounds, with no printer marks. Content retains design spacing. Browser controls and credential popups are excluded. External URLs remain PDF links, chapter URLs become internal destinations, and Chromium embeds selectable text, tags and a document outline.
+
+The local booklet contains 101 PDF pages from the 50 website articles. All sheets are 612 × 792 points. Checks found no empty or header-only pages, no missing images or unresolved internal destinations, and no horizontal text/figure overflow. All 342 visible original PowerPoint paragraphs and all 27 Word body paragraphs are present in extracted PDF text. The PDF contains 27 external links and eight internal links. All pages were reviewed in rendered contact sheets, followed by a detailed lab-page check and final review of the corrected last chapter. Individual lab steps stay together where they fit; oversized sections can continue onto another page.
+
+The actual local Download Workbook button downloaded a file matching the generated PDF byte-for-byte. The existing source-content validator and JavaScript syntax checks passed. Locked dependency installation passed with no reported vulnerabilities. Evidence: `../verification_upd/workbook/`. Source website styling and content are unchanged by the PDF stylesheet. Deployment uploads only the staged website and generated download; per-attempt artifact names prevent the earlier duplicate-artifact failure.
+
 # PowerPoint workshop website QA
 
 final result: passed

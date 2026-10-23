@@ -1,0 +1,5 @@
+{
+  "private": true,
+  "scripts": { "build:workbook": "node scripts/build-workbook.cjs" },
+  "devDependencies": { "playwright": "1.62.1" }
+}

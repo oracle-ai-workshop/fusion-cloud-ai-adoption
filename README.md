@@ -1,6 +1,6 @@
 # Oracle AI Adoption Workshop
 
-A static, responsive website containing all 45 pages of `powerpoint.pptx`, plus two complete Generative AI labs from the saved workshop and Sourcing Command Center and Project Delivery Assurance Workspace image pages. The labs appear after ERP in Let’s Explore AI Agent Studio & Agents; the original PowerPoint pages retain their relative order and direct URLs. Content is reflowed into a workshop with a persistent contents tree, page navigation, exercise page selectors, screenshot enlargement, and fixed Previous/Next navigation.
+A static, responsive website containing all 45 pages of `powerpoint.pptx`, plus two complete Generative AI labs from the saved workshop, Sourcing Command Center and Project Delivery Assurance Workspace image pages, and the Sales Command Center lab. The labs appear after ERP in Let’s Explore AI Agent Studio & Agents; the original PowerPoint pages retain their relative order and direct URLs. Content is reflowed into a workshop with a persistent contents tree, page navigation, exercise page selectors, screenshot enlargement, and fixed Previous/Next navigation.
 
 ## Preview
 
@@ -28,7 +28,21 @@ This folder is a complete publishing root. It has no hardcoded username, reposit
 
 The workflow inside this folder assumes the folder's contents become the repository root. If the parent project is used as the repository instead, move this workflow to the repository's `.github/workflows/`, set its upload `path` to `site_upd`, and disable the older workflow that publishes `site/`. GitHub Pages provides one site per repository; running both publishing workflows would replace the same deployment.
 
-There is no npm install or build step. All CSS, JavaScript, fonts, illustrations, backgrounds, icons, screenshots, and original-slide previews are local. Original external documentation and demo links retain their destinations and require internet access.
+All CSS, JavaScript, fonts, illustrations, backgrounds, icons, screenshots, and original-slide previews are local. The website itself needs only a static server. Publication also builds the downloadable digital workbook before uploading a single Pages artifact. Each workflow attempt uses a unique artifact name so rerunning a failed deployment cannot select duplicate artifacts. Original external documentation and demo links retain their destinations and require internet access.
+
+## Digital workbook
+
+**Download Workbook** downloads `downloads/oracle-ai-adoption-workbook.pdf`, generated automatically on every publication from the current 50 HTML articles in their reading order. The PDF uses portrait US Letter pages, zero outer page margins, full-page backgrounds, selectable text, clickable external URLs and internal chapter links. Content keeps its own design spacing. Long labs flow across multiple PDF pages; browser navigation and credential popups are excluded.
+
+To generate it locally from this repository root, using Node.js 22 or newer:
+
+```sh
+npm ci
+npx playwright install chromium
+npm run build:workbook
+```
+
+The generator checks images, resources, chapter targets and horizontal content bounds. `workbook.css` controls the PDF layout without changing the website. Generated PDFs and build dependencies are ignored by Git; the publishing workflow includes the generated download in its staged website. A local static preview serves the download after the first local build.
 
 ## Design sources
 

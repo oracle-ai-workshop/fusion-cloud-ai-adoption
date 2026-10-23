@@ -76,6 +76,12 @@ window.workshopReady = new Promise((resolve, reject) => require([
       const image=event.target.closest('[data-image]');
       if(image)openImage(image.dataset.image,articles[current-1].querySelector('h1').textContent.trim());
     });
+    document.getElementById('download-workbook-button').addEventListener('ojAction', () => {
+      const link = document.createElement('a');
+      link.href = 'downloads/oracle-ai-adoption-workbook.pdf?v=' + Date.now();
+      link.download = 'Oracle-AI-Adoption-Workbook.pdf';
+      link.click();
+    });
     document.getElementById('close-image').addEventListener('ojAction', () => dialog.close());
     const copyStatus = document.getElementById('demo-copy-status');
     const demoTabs = [...demoDialog.querySelectorAll('[role="tab"]')];

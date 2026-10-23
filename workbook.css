@@ -1,0 +1,48 @@
+/* Digital booklet: US Letter portrait, zero page margins, no printer marks. */
+@page{size:letter portrait;margin:0}
+html,body{margin:0!important;padding:0!important;width:8.5in;background:rgb(var(--oj-palette-neutral-rgb-10));-webkit-print-color-adjust:exact;print-color-adjust:exact}
+main{display:block;margin:0!important;padding:0!important;width:8.5in;min-height:0;container-type:normal}
+.slide-page{display:block!important;width:8.5in;min-height:0;break-before:page;padding-bottom:0;overflow:visible}
+.slide-page:first-child{break-before:auto}
+.article-top{height:auto;min-height:64px;padding:22px 36px 16px;break-after:avoid}
+.chapter-label{font-size:10px;max-width:80%}
+.page-position{font-size:10px;white-space:nowrap}
+.lesson-heading{padding:10px 36px 24px;max-width:none;break-after:avoid}
+.lesson-heading h1{font-size:30px;line-height:1.2;margin:0 0 14px;max-width:none}
+.lesson-heading>p{font-size:15px;line-height:1.5}
+.lesson-grid{display:block;padding:0 36px;max-width:none}
+.lesson-copy{font-size:14px;line-height:1.55}
+.lesson-figures{display:block!important;margin-top:24px}
+.screenshot{display:block;break-inside:avoid;margin:0 0 20px!important;max-width:100%;overflow:visible}
+.figure-open{cursor:default;border:0;display:block;width:100%;padding:0;background:transparent}
+.screenshot img,.lab-section .screenshot img{display:block;width:100%;height:auto;max-height:8.5in;object-fit:contain}
+.resource-rows{display:block;padding:0 36px}
+.resource-row{display:block;padding:24px;break-inside:avoid;margin-bottom:20px}
+.resource-row:last-child{margin-bottom:0}
+.resource-art{max-width:300px;margin:0 auto 20px}
+.resource-copy p{font-size:14px;line-height:1.5}
+.resource-directory{margin:0 36px;padding:8px 24px 24px}
+.directory-heading{font-size:16px;break-after:avoid}
+.directory-link{font-size:14px;line-height:1.5;break-inside:avoid}
+.lab-content{padding:0 36px;max-width:none}
+.lab-section{padding:22px 0;break-inside:avoid}
+.lab-section h2{font-size:23px}.lab-section h3{font-size:20px}
+.lab-section p{margin-bottom:14px}.lab-section li{margin:6px 0}
+.lab-section pre{white-space:pre-wrap;font-size:13px;break-inside:avoid}
+h1,h2,h3{break-after:avoid}p,li{orphans:3;widows:3}
+a{overflow-wrap:anywhere}
+.source-footer,.source-artifacts,.source-spacer,[hidden]{display:none!important}
+.dark-page{height:11in;min-height:11in;max-height:11in;padding-bottom:0;overflow:hidden;break-inside:avoid;background-size:cover}
+.dark-page .article-top{height:76px}
+.chapter-hero{height:calc(11in - 76px);min-height:0;padding:100px 54px;justify-content:center}
+.chapter-hero h1{font-size:54px;line-height:1.12}
+.agenda-page{height:calc(11in - 76px);min-height:0;padding:56px 54px 60px}
+.agenda-page h1{font-size:48px;margin-bottom:36px}
+.agenda-link{font-size:21px;padding:24px 0}
+.workshop-hero{height:calc(11in - 76px);min-height:0;display:block;padding:52px 48px 0}
+.hero-copy{width:100%;max-width:none;padding:0}
+.hero-copy h1{font-size:62px;line-height:1.06;max-width:660px;margin-bottom:28px}
+.hero-subtitle{margin-bottom:26px}.hero-subtitle p{font-size:20px}
+.cover-principles{width:550px;max-width:85%}
+.cover-car{width:94%;right:-20%;bottom:-8%;transform:none}
+.cover-cloud{width:110%;top:-12%;right:-28%}

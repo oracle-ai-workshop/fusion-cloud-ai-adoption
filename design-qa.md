@@ -1,3 +1,25 @@
+## October 24, 2026 local exercise reorder
+
+The hands-on exercise groups now run HCM – Benefits Policy Advisor Agent, CX Sales – Lead Advisor Agent, then SCM – Purchase Order to Sales Order Converter. The sidebar and all exercise subpages follow that order. Original slide IDs, direct URLs and article contents are unchanged; displayed page numbers and page selectors derive from the new reading order.
+
+All eight forward/backward boundary checks passed: chapter to HCM, HCM to CX, CX to SCM, SCM to Sales Command Center, and the reverse transitions. Selecting SCM opens its first page at 41/50, with selectors 41–47. The 62-page workbook was regenerated and its group starts confirmed at physical pages 27, 40 and 51, respectively. These rendered pages were visually reviewed. Evidence: ../verification_upd/exercise-order/. Local only; no commit or push.
+
+## October 24, 2026 local edit and prompt-entry walkthroughs
+
+Prompts 2 and 3 each now include instructions and three matching video screenshots for clicking Edit, selecting the brain icon and entering the respective prompt in Ask Oracle. These appear before each stage's existing result images. Six new frames at 137/141/164 and 257/277/285 seconds use the same presenter-free 1920 × 906 crop, bringing the exercise to 11 screenshots. All three code blocks are byte-for-byte unchanged.
+
+Both prompt Copy controls returned their expected payloads. All six new image viewers loaded at full resolution, and the updated page passed overflow checks at 1600px and 390px. The workbook remains 62 pages; captions and figure spacing are slightly tighter in the PDF so Prompt 3 keeps its heading, instructions, complete prompt and five screenshots on one page. The affected pages were rendered and reviewed. The source validator passes all 25 Word paragraphs and 11 frame hashes. Evidence: ../verification_upd/sales-update/edit-sequence/. This refinement remains local only.
+
+## October 24, 2026 local Sales Command Center replacement
+
+Slide 50 retains its title and now starts with the exact requested 3-prompt introduction. All 25 nonempty paragraphs from Updated Prompts.docx are preserved verbatim in the three numbered prompt groups. Word bullets become hyphen bullets inside the code blocks. Each prompt has an accessible Copy button and its own live copy-status feedback, reusing the existing clipboard handling.
+
+The complete video was sampled at 15-second intervals and matched visually to the three stages; no transcription was needed. Five selected full-resolution frames show initial prompt entry, Priority Opportunities, Strategic Accounts, the combined workspace and meeting preparation detail. Crop x=0, y=126, width=1920, height=906 excludes the presenter tile, browser chrome and desktop taskbar. Source document/video hashes, paragraph indices, frame timestamps, crops and image hashes are recorded in lab-provenance.json.
+
+All three actual Copy buttons returned text identical to the expected Word prompt payloads, including bullets and paragraph breaks. Phone copying and the existing demo username Copy button also passed. All five image viewers loaded at 1920 × 906. The page has no horizontal overflow or clipped prompt text at 1600px and 390px, and existing screenshot columns stack at the established breakpoint. Browser warnings/errors were empty. The content validator passes all 50 pages, 25 Word paragraphs, five new frames, 434 original PowerPoint paragraphs, 27 original destinations and 110 original assets.
+
+The regenerated 62-page booklet retains all 25 Word paragraphs and the five selected frames across three exercise pages. Copy controls are hidden in the PDF, and code remains selectable. The affected pages were rendered and reviewed with no clipping or empty pages. Evidence: ../verification_upd/sales-update/. No commit, push or publication was performed.
+
 ## October 23, 2026 local slide 08 text replacement
 
 The two access-requirement screenshots on slide 08/50 were replaced with the supplied text, prerequisites, caution and documentation links. Existing introductory instructions and original source markers remain unchanged. Text uses the full instruction width in the website and booklet. The archived original image files remain available for source auditing.

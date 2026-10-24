@@ -148,167 +148,253 @@
     {
       "id": 50,
       "title": "Sales Command Center",
-      "sourceDocument": "Prompts_SalesCommandCenter_Basic.docx",
-      "documentSha256": "d0a88fabb37600f19b9686c38a2f98918681d9f0dc10c8ba4dcf05d69d92d3f2",
-      "sourceVideo": "video4483761456.mp4",
-      "videoSha256": "af372545e84cd369cba1b09486a6acfbd5d8e4cc9f862b0fe453ba9563201063",
+      "sourceDocument": "Updated Prompts.docx",
+      "documentSha256": "2219798da7fc90af5c8d99acc52f2dab7671287b89524379a557c4ead563b43a",
+      "sourceVideo": "video17145987963.mp4",
+      "videoSha256": "e551f27607032ccac621f736c475bbfc51edc8e52f47a381e66289a24103a256",
       "paragraphs": [
         {
-          "index": 0,
+          "index": 2,
           "text": "Create a sales workspace that helps me identify which opportunities need attention first."
         },
         {
-          "index": 1,
+          "index": 3,
           "text": "Start with one section called “Priority Opportunities”, using any existing published workflow that is relevant."
         },
         {
-          "index": 2,
+          "index": 4,
           "text": "Show the workflow’s opportunity list and priority explanations when the application opens. Let me use Ask Oracle to explore these opportunities and understand recommended next steps."
         },
         {
-          "index": 3,
-          "text": "=="
-        },
-        {
-          "index": 4,
-          "text": "Choose - Opportunity Health and Prioritization Agent"
-        },
-        {
           "index": 5,
-          "text": "Enhancements prompts:"
-        },
-        {
-          "index": 6,
-          "text": "1. "
-        },
-        {
-          "index": 7,
-          "text": "Add a “Strategic Accounts” section below “Priority Opportunities” to help me identify which customer accounts deserve attention."
+          "text": "I want the app to be with 2 columns layout."
         },
         {
           "index": 8,
-          "text": "Show up to five accounts with:"
+          "text": "Add a “Strategic Accounts” section below “Priority Opportunities” to help me identify which customer accounts deserve attention."
         },
         {
           "index": 9,
-          "text": "Account name."
+          "text": "Show up to five accounts with:"
         },
         {
           "index": 10,
-          "text": "Key risks, growth opportunities, or approaching renewals, where information is available."
+          "text": "Account name."
         },
         {
           "index": 11,
-          "text": "A short explanation of why each account deserves attention."
+          "text": "Key risks, growth opportunities, or approaching renewals, where information is available."
         },
         {
           "index": 12,
-          "text": "A suggested next step supported by the available information."
+          "text": "A short explanation of why each account deserves attention."
         },
         {
           "index": 13,
-          "text": "Let me use Ask Oracle to explore these accounts, understand the recommendations, and prepare for customer conversations."
+          "text": "A suggested next step supported by the available information."
         },
         {
           "index": 14,
-          "text": "Use actual available Sales data and clearly indicate missing information. Keep the experience informational, with business records unchanged and no emails sent."
+          "text": "Let me use Ask Oracle to explore these accounts, understand the recommendations, and prepare for customer conversations."
         },
         {
           "index": 15,
+          "text": "Use actual available Sales data and clearly indicate missing information. Keep the experience informational, with business records unchanged and no emails sent."
+        },
+        {
+          "index": 16,
           "text": "Keep the existing Priority Opportunities section working. Use English throughout and prepare the enhanced application for preview."
         },
         {
-          "index": 18,
-          "text": "2. "
-        },
-        {
-          "index": 19,
-          "text": "Add a “Pre-Meeting Briefs” section to help me prepare for upcoming customer conversations."
-        },
-        {
           "index": 20,
-          "text": "Show up to four customer meetings scheduled for the next seven days, including:"
+          "text": "Add a “Pre-Meeting Briefs” section type multicard  Priority Opportunities section, to help me prepare for for upcoming customer meetings."
         },
         {
           "index": 21,
-          "text": "Meeting title, date, and time."
+          "text": "Show all her meetings scheduled within the next seven days, calculated from the current system time. Use actual Sales meeting data and the existing published meeting-preparation capability."
         },
         {
           "index": 22,
-          "text": "Customer account and related opportunity, where available."
+          "text": "When the application opens, show a card for each meeting with:"
         },
         {
           "index": 23,
-          "text": "A short preparation brief covering relevant recent developments, key risks or opportunities, and suggested talking points."
+          "text": "Meeting subject, date and time."
         },
         {
           "index": 24,
-          "text": "Three suggested questions to ask the customer."
+          "text": "Customer account and related opportunity, where available."
         },
         {
           "index": 25,
-          "text": "Let me use Ask Oracle to prepare for a specific meeting, explore the supporting account or opportunity information, and draft a customer follow-up message for review."
+          "text": "Contacts, owner and location."
         },
         {
           "index": 26,
-          "text": "Use actual available Sales and meeting data. Clearly identify missing information and distinguish having no upcoming meetings from being unable to retrieve them."
+          "text": "A tailored preparation brief based on the meeting’s agenda and available information."
         },
         {
           "index": 27,
-          "text": "Keep Priority Opportunities and Strategic Accounts working. Use a clear two-column layout, with those sections on the left and Pre-Meeting Briefs on the right."
+          "text": "Three suggested customer questions and three practical next steps."
         },
         {
           "index": 28,
-          "text": "Use English throughout. Keep business records unchanged and display follow-up messages as text without sending them. Prepare the enhanced application for preview."
+          "text": "Keep all information directly visible using standard supported cards, without expandable controls or time-zone captions. Clearly identify missing information and distinguish no matching meetings from a retrieval problem."
+        },
+        {
+          "index": 29,
+          "text": "Let me use Ask Oracle to prepare for a specific meeting, explore the suggested questions, and draft a follow-up message for review."
+        },
+        {
+          "index": 30,
+          "text": "Keep the other sections working. Use English throughout, leave business records unchanged, and do not send emails."
+        },
+        {
+          "index": 31,
+          "text": "If there is any existing workflow  related to this that you can use, please use it."
         }
       ],
       "figures": [
         {
-          "path": "assets/labs/sales-command-center/priority-workflow.png",
-          "timeSeconds": 230,
+          "path": "assets/labs/sales-command-center/build-workspace.png",
+          "timeSeconds": 15,
           "crop": {
             "x": 0,
             "y": 126,
             "width": 1920,
             "height": 906
           },
-          "sha256": "36ba246959648df954603b89565b20353578b233db0ca7014fa175bc3e1ff911"
+          "sha256": "c2a328ceb0f21e748a7bb8920260887a84909e94ab6e448103efa65b24898ba5",
+          "alt": "App builder with the initial Sales workspace prompt"
         },
         {
           "path": "assets/labs/sales-command-center/priority-opportunities.png",
-          "timeSeconds": 220,
+          "timeSeconds": 135,
           "crop": {
             "x": 0,
             "y": 126,
             "width": 1920,
             "height": 906
           },
-          "sha256": "07d2a2218821bb6678c31eaed1164b931c2b6341e4f686d3d2d387dac5244df1"
+          "sha256": "fb865c02a24dac66bdedff2ba6827f16f6b1263c21dcfae4f895b4dfc2a0c4ca",
+          "alt": "Priority Opportunities preview"
+        },
+        {
+          "path": "assets/labs/sales-command-center/prompt-2-edit.png",
+          "timeSeconds": 137,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "8545acd09e003c58c2cf1a04273158291bb3f8c5a91a5b9b62f708857e361de0",
+          "alt": "Strategic Accounts: Edit button in the workspace preview",
+          "caption": "1. Click Edit."
+        },
+        {
+          "path": "assets/labs/sales-command-center/prompt-2-brain.png",
+          "timeSeconds": 141,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "dcc712b7bb315319033a908393ed67e4da23fcc2a846ce36d5e048ed0fc24df8",
+          "alt": "Strategic Accounts: brain icon in the app builder toolbar",
+          "caption": "2. Select the brain icon."
+        },
+        {
+          "path": "assets/labs/sales-command-center/prompt-2-enter.png",
+          "timeSeconds": 164,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "bed5fbc37940c4176ded2d9abdcc118cecc44096c6fe3912cad279477ea882ba",
+          "alt": "Strategic Accounts: Prompt 2 entered in Ask Oracle",
+          "caption": "3. Paste Prompt 2 and submit."
         },
         {
           "path": "assets/labs/sales-command-center/strategic-accounts.png",
-          "timeSeconds": 330,
+          "timeSeconds": 248,
           "crop": {
             "x": 0,
             "y": 126,
             "width": 1920,
             "height": 906
           },
-          "sha256": "b7b0703f7a8e2f3ca35841e354819dd19e98ff4a0f221c9aef8d2728b63af4a1"
+          "sha256": "238d9a187a3c0c8ef3f4371431a9dba5c40da6fab5ab50710f37943d6046e52c",
+          "alt": "Priority Opportunities and Strategic Accounts preview"
+        },
+        {
+          "path": "assets/labs/sales-command-center/prompt-3-edit.png",
+          "timeSeconds": 257,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "b670d292ecd2f67da6e3abc3af6e124d9b062bf21d5ec50fe397715f085d95ff",
+          "alt": "Pre-Meeting Briefs: Edit button in the workspace preview",
+          "caption": "1. Click Edit."
+        },
+        {
+          "path": "assets/labs/sales-command-center/prompt-3-brain.png",
+          "timeSeconds": 277,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "5736b679036772ac3177c6d3f9ff60f98b2fa71ba2609c1809b5f1daecf9ac69",
+          "alt": "Pre-Meeting Briefs: brain icon in the app builder toolbar",
+          "caption": "2. Select the brain icon."
+        },
+        {
+          "path": "assets/labs/sales-command-center/prompt-3-enter.png",
+          "timeSeconds": 285,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "3f43bf8b804ddf871804c96403c5126082e9a0dd43d8349b1ed223852f33d531",
+          "alt": "Pre-Meeting Briefs: Prompt 3 entered in Ask Oracle",
+          "caption": "3. Paste Prompt 3 and submit."
         },
         {
           "path": "assets/labs/sales-command-center/pre-meeting-briefs.png",
-          "timeSeconds": 426,
+          "timeSeconds": 405,
           "crop": {
             "x": 0,
             "y": 126,
             "width": 1920,
             "height": 906
           },
-          "sha256": "bf16fa209b89a090563e67a5c60cb2c377cb6c8d21fdf8e5f150163b4612ffe7"
+          "sha256": "d04fafd109cd7958cb6b62ef80450e89c6106742be3dbc644b856f3b4a772bce",
+          "alt": "Sales workspace with Priority Opportunities, Strategic Accounts and Pre-Meeting Briefs"
+        },
+        {
+          "path": "assets/labs/sales-command-center/meeting-preparation.png",
+          "timeSeconds": 375,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "69b5eb0028c27ba7c5e854746cb4cec8f989baaf8880d2836642cd81263b1557",
+          "alt": "Meeting preparation cards with suggested questions and next steps"
         }
       ],
-      "notes": "Only application pixels are included in each frame; the webcam tile, browser toolbar and desktop taskbar are outside the crop. All nonempty Word body paragraphs are preserved in source order."
+      "notes": "The three numbered Word groups are displayed as copyable prompts; paragraph wording and source order are preserved. Word bullet formatting is represented with hyphens inside the code blocks. Video frames are cropped to application pixels, excluding the presenter tile, browser chrome and desktop taskbar. Prompts 2 and 3 include the video sequence for Edit, the brain icon, and prompt entry before their result screenshots."
     }
   ]
 }

@@ -110,3 +110,11 @@ body[data-theme="dark"] .workshop-footer{background:rgba(16,28,21,.38);border-to
 /* Text replacements use the full instruction width on screen and in the booklet. */
 .lesson-grid:has(>.lesson-copy:only-child){grid-template-columns:minmax(0,1fr)}
 .access-requirements h2{font-size:24px;line-height:1.3;margin:32px 0 20px}
+.prompt-step .lesson-grid{padding:0;max-width:none}
+.prompt-panel{border:1px solid var(--oj-core-divider-color);border-radius:var(--oj-core-border-radius-md);background:var(--oj-core-bg-color-content)}
+.prompt-toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:8px 12px 8px 18px;border-bottom:1px solid var(--oj-core-divider-color)}
+.prompt-kind{font-size:12px;font-weight:600;letter-spacing:.8px;text-transform:uppercase;margin-right:auto}
+.prompt-copy-status{font-size:12px;color:var(--oj-core-text-color-secondary)}
+.prompt-panel pre{margin:0;border:0;border-radius:0;background:transparent}
+.prompt-panel code{font-family:monospace;line-height:1.65}
+.prompt-step figcaption{padding:10px 12px;font-size:12px;line-height:1.5;color:var(--oj-core-text-color-secondary)}

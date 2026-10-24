@@ -113,12 +113,13 @@ window.workshopReady = new Promise((resolve, reject) => require([
       copyStatus.textContent = '';
       demoDialog.showModal();
     });
-    demoDialog.querySelectorAll('[data-copy-target]').forEach(button => button.addEventListener('ojAction', async () => {
+    document.querySelectorAll('[data-copy-target]').forEach(button => button.addEventListener('ojAction', async () => {
+      const status = button.dataset.copyStatus ? document.getElementById(button.dataset.copyStatus) : copyStatus;
       try {
         await navigator.clipboard.writeText(document.getElementById(button.dataset.copyTarget).textContent);
-        copyStatus.textContent = button.dataset.copyLabel + ' copied.';
+        status.textContent = button.dataset.copyLabel + ' copied.';
       } catch {
-        copyStatus.textContent = 'Could not copy. Select the text to copy it.';
+        status.textContent = 'Could not copy. Select the text to copy it.';
       }
     }));
     demoDialog.querySelectorAll('[data-close-demo]').forEach(button => button.addEventListener('ojAction', () => demoDialog.close()));

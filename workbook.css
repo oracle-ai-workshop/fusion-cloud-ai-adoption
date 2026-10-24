@@ -32,6 +32,11 @@ main{display:block;margin:0!important;padding:0!important;width:8.5in;min-height
 .lab-section h2{font-size:23px}.lab-section h3{font-size:20px}
 .lab-section p{margin-bottom:14px}.lab-section li{margin:6px 0}
 .lab-section pre{white-space:pre-wrap;font-size:13px;break-inside:avoid}
+.prompt-toolbar{display:none}
+.prompt-panel pre{font-size:12px;line-height:1.5;break-inside:auto}
+.prompt-panel code{font-size:inherit;line-height:inherit}
+.prompt-step figcaption{padding:6px 8px;font-size:10px;line-height:1.4}
+.prompt-step .screenshot{margin-bottom:14px!important}
 h1,h2,h3{break-after:avoid}p,li{orphans:3;widows:3}
 a{overflow-wrap:anywhere}
 .source-footer,.source-artifacts,.source-spacer,[hidden]{display:none!important}

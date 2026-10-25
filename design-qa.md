@@ -1,3 +1,19 @@
+## October 25, 2026 agenda alignment — local review
+
+Agenda now follows all five top-level workshop sections in sidebar order. Added “04. How to create Agentic Apps” linking to slide 50; the last entry is “05. AI Training & Resources” linking to its opening slide 44. Original presentation labels remain in hidden source audit markup. All other slide content is unchanged.
+
+The agenda labels and destinations were compared with every top-level section. Both changed links were clicked in the browser, and the 387px layout shows all five items without horizontal overflow. The regenerated 63-page workbook has the same five agenda entries with five resolved internal destinations; its agenda page was rendered and reviewed. Source/content validation and whitespace checks pass. Evidence: ../verification_upd/agenda/. Local only; no commit or push.
+
+## October 25, 2026 compact credential rows — local review
+
+Reduced vertical padding on username/password boxes from 18px to 8px. Desktop credential rows now match the URL row at approximately 61px, down from 81px; native copy controls retain 44px height. The stylesheet version was updated so cached pages load the change. Both tabs and the 387px popup were checked; no horizontal overflow. Existing clipboard checks remain applicable because HTML targets and JavaScript are unchanged. Evidence: ../verification_upd/demo-usernames/compact/. Local only; no commit or deployment.
+
+## October 25, 2026 additional demo usernames — local review
+
+Both demo environment tabs now show three stacked username boxes: john.dunbar, natalie.salesrep and ava.clark. Each has its own native Redwood copy icon, unique target and accessible name. Existing passwords, URLs and shared clipboard error handling are retained. The user supplied “ava clark”; ava.clark follows the existing login format and remains subject to review.
+
+All six username copy controls were clicked and their clipboard contents verified exactly. Desktop (1409 CSS pixels) and narrow (387 pixels) popup layouts were reviewed; the narrow modal scrolls vertically without horizontal overflow. The slide body and both passwords match the preceding commit. Content validation, JavaScript syntax and whitespace checks passed; no browser warnings/errors. Evidence: ../verification_upd/demo-usernames/. No commit or deployment. Live Fusion logins were not tested; the workbook was not rebuilt because dialog content is excluded from it.
+
 ## October 25, 2026 optional profitability exercise — local review
 
 Appended “4. Opportunity Profitability — Optional” to Sales Command Center (`?slide=50`). Both user-supplied prompts remain verbatim in separate code blocks with native Redwood Copy buttons. The explanation introduces the agent/workflow question and the follow-up search prompt. Three application-only frames from video2165345100.mp4 show the question, matching workflow and resulting section; the presenter and browser/desktop chrome are excluded. Source timestamps, crop and hashes are in lab-provenance.json.

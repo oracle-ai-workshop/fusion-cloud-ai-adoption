@@ -82,6 +82,7 @@ body[data-theme="dark"] .workshop-footer{background:rgba(16,28,21,.38);border-to
   .demo-detail{grid-template-columns:76px minmax(0,1fr);gap:12px;padding:16px}
 }
 
+.demo-detail:has(.demo-credential){padding-block:8px}
 .demo-credential{display:flex;align-items:center;justify-content:space-between;gap:8px}
 .demo-copy{flex-shrink:0;font-size:12px}
 .demo-dialog-footer{justify-content:space-between;gap:16px}

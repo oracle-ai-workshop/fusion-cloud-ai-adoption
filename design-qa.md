@@ -1,3 +1,9 @@
+## October 25, 2026 workspace benefits — local review
+
+Added the two user-supplied six-item benefits lists immediately below the Sourcing Command Center and Project Delivery Assurance Workspace screenshots. Introductory product names and bullet labels are bold; all wording is verbatim. Titles, image bytes and image-viewer markup remain unchanged. Benefits text and source are recorded in lab-provenance.json; the source validator now checks the added text.
+
+Both local pages show six bullets below their images. Narrow layouts at 502px and 387px have no horizontal overflow. All twelve bullet texts and both introductions match the supplied content. The regenerated workbook remains 63 Letter portrait pages; the lists appear below their centered screenshots on PDF pages 24 and 25, both rendered and reviewed. Content/source and whitespace checks passed. Evidence: ../verification_upd/workspace-benefits/. Local only, no commit or push.
+
 ## October 25, 2026 preferred username order — local review
 
 John remains first, followed by the other users alphabetically: john.dunbar, amy.marlin, ava.clark, natalie.salesrep. Both environment tabs were verified in the browser. Only existing row order changed; copy controls and credentials are unchanged. Local only, no commit or push.

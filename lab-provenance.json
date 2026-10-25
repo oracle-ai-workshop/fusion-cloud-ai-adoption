@@ -134,14 +134,34 @@
       "title": "Sourcing Command Center",
       "path": "assets/labs/sourcing-command-center.png",
       "source": "User-provided Screenshot 2026-10-23 at 11.27.36.png",
-      "sha256": "306708c5dcb8514a6c883ef3ede066eada863b7760cbf41020b514a481a6a139"
+      "sha256": "306708c5dcb8514a6c883ef3ede066eada863b7760cbf41020b514a481a6a139",
+      "benefitsSource": "User-supplied text",
+      "benefitsText": [
+        "Key benefits of Sourcing Command Center in Oracle Fusion Cloud Procurement:",
+        "Faster award decisions: AI recommendations help teams evaluate and award negotiations sooner.",
+        "Proactive risk detection: Flags urgent issues, such as low supplier participation and overdue awards.",
+        "Stronger supplier engagement: Enables quick supplier reminders and negotiation extensions.",
+        "Higher productivity: Teams can take recommended actions directly from one workspace.",
+        "Better visibility: Summarizes sourcing workload, negotiation status, and priorities.",
+        "Improved savings potential: Helps teams identify opportunities and make informed sourcing decisions."
+      ]
     },
     {
       "id": 49,
       "title": "Project Delivery Assurance Workspace",
       "path": "assets/labs/project-delivery-assurance-workspace.png",
       "source": "User-provided Screenshot 2026-10-23 at 11.41.16.png",
-      "sha256": "5e31698b981f07cac9eb4ab7e4ffa075d47b5ff6f96ac2fae6d5ba2eac2f46af"
+      "sha256": "5e31698b981f07cac9eb4ab7e4ffa075d47b5ff6f96ac2fae6d5ba2eac2f46af",
+      "benefitsSource": "User-supplied text",
+      "benefitsText": [
+        "Key benefits of Project Delivery Assurance Workspace in Oracle:",
+        "Earlier risk detection: AI agents continuously assess project plans and execution signals to anticipate delivery threats.",
+        "Faster recovery planning: Evaluates options across resources, scope, schedules, and dependencies.",
+        "Better financial visibility: Assesses financial exposure alongside delivery risks.",
+        "Clearer priorities: Surfaces project issues that need attention so teams can act sooner.",
+        "Stronger follow-through: Tracks whether recovery actions restore project progress.",
+        "Human oversight: Escalates tradeoffs requiring judgment to project leaders."
+      ]
     }
   ],
   "documentPages": [

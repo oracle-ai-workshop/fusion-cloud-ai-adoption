@@ -396,5 +396,67 @@
       ],
       "notes": "The three numbered Word groups are displayed as copyable prompts; paragraph wording and source order are preserved. Word bullet formatting is represented with hyphens inside the code blocks. Video frames are cropped to application pixels, excluding the presenter tile, browser chrome and desktop taskbar. Prompts 2 and 3 include the video sequence for Edit, the brain icon, and prompt entry before their result screenshots."
     }
+  ],
+  "optionalExercises": [
+    {
+      "id": 50,
+      "title": "Opportunity Profitability",
+      "optional": true,
+      "source": "User-supplied prompts",
+      "prompts": [
+        {
+          "id": "sales-prompt-4",
+          "text": "Do you have any idea for a section that could help with comparing profitability percentages, like an advisor for opportunity profitability?"
+        },
+        {
+          "id": "sales-prompt-4-agent",
+          "text": "Please search for a related agent that may be helpful for this"
+        }
+      ],
+      "sourceVideo": "video2165345100.mp4",
+      "videoSha256": "59d48ca82d73cc127076e482b81e89357507baaf242acf96e5fbb901522400ce",
+      "figures": [
+        {
+          "path": "assets/labs/sales-command-center/profitability-agent-request.png",
+          "timeSeconds": 33,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "7452c164f46cc408776d85bb21df21cfa6f0ef14f5401a9e5de5e9786bfa6b89",
+          "alt": "Ask Oracle asks which agent or workflow to use for Opportunity Profitability",
+          "caption": "The builder asks which agent or workflow to use."
+        },
+        {
+          "path": "assets/labs/sales-command-center/profitability-agent-found.png",
+          "timeSeconds": 84,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "79a87bca4b38bed433eb9951b2c1114b3c9b4e669ed5b00536a0f884d7ad3f65",
+          "alt": "Ask Oracle finds an Opportunity Profitability Advisor workflow",
+          "caption": "Ask Oracle finds a related Opportunity Profitability Advisor workflow."
+        },
+        {
+          "path": "assets/labs/sales-command-center/profitability-preview.png",
+          "timeSeconds": 136,
+          "crop": {
+            "x": 0,
+            "y": 126,
+            "width": 1920,
+            "height": 906
+          },
+          "sha256": "403c18d3ff137c81800be5435e6e70a1dea90d11dac970beb7506a0b099e0a7e",
+          "alt": "Sales Command Center preview with the Opportunity Profitability Advisor section",
+          "caption": "Preview of the Opportunity Profitability Advisor section."
+        }
+      ],
+      "notes": "Appended after the three Word-sourced prompts. Both supplied prompts are verbatim. Frames exclude the presenter tile, browser chrome and desktop taskbar using the same application crop as the earlier video."
+    }
   ]
 }

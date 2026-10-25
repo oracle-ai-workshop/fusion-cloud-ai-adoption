@@ -1,3 +1,11 @@
+## October 25, 2026 optional profitability exercise — local review
+
+Appended “4. Opportunity Profitability — Optional” to Sales Command Center (`?slide=50`). Both user-supplied prompts remain verbatim in separate code blocks with native Redwood Copy buttons. The explanation introduces the agent/workflow question and the follow-up search prompt. Three application-only frames from video2165345100.mp4 show the question, matching workflow and resulting section; the presenter and browser/desktop chrome are excluded. Source timestamps, crop and hashes are in lab-provenance.json.
+
+Both actual clipboard values match exactly; all three image viewers load 1920 × 906 assets. Two columns were verified at 1550 CSS pixels and stacking at 387 pixels, with no horizontal overflow or clipped prompt text. Browser warnings/errors: none. An independent comparison confirms index.html is unchanged outside the appended optional section. The existing content/source validator and git diff whitespace check pass.
+
+The regenerated local workbook contains 63 Letter portrait pages with zero page margins. The complete optional exercise appears on PDF page 61 in the established text-left/images-right layout; its rendered page was reviewed. Both exact prompts, all 33 external destinations and eight resolved internal links remain present; no empty sheets. Evidence: ../verification_upd/optional-profitability/. No commit, push or deployment performed. The exercise was not run against a live Fusion environment.
+
 ## October 24, 2026 local exercise reorder
 
 The hands-on exercise groups now run HCM – Benefits Policy Advisor Agent, CX Sales – Lead Advisor Agent, then SCM – Purchase Order to Sales Order Converter. The sidebar and all exercise subpages follow that order. Original slide IDs, direct URLs and article contents are unchanged; displayed page numbers and page selectors derive from the new reading order.

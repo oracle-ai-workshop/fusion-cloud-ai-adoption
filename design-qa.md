@@ -1,3 +1,7 @@
+## October 25, 2026 Amy username — local review
+
+Added amy.marlin to both environment tabs. All four username boxes are alphabetical: amy.marlin, ava.clark, john.dunbar, natalie.salesrep. Amy has separate native copy controls in each tab; both clipboard values were verified. Unique IDs and alphabetical order pass; no HTML outside username rows changed. Local only, no commit or push. Evidence: ../verification_upd/demo-usernames/amy/.
+
 ## October 25, 2026 agenda alignment — local review
 
 Agenda now follows all five top-level workshop sections in sidebar order. Added “04. How to create Agentic Apps” linking to slide 50; the last entry is “05. AI Training & Resources” linking to its opening slide 44. Original presentation labels remain in hidden source audit markup. All other slide content is unchanged.

@@ -1,3 +1,7 @@
+## October 25, 2026 preferred username order — local review
+
+John remains first, followed by the other users alphabetically: john.dunbar, amy.marlin, ava.clark, natalie.salesrep. Both environment tabs were verified in the browser. Only existing row order changed; copy controls and credentials are unchanged. Local only, no commit or push.
+
 ## October 25, 2026 Amy username — local review
 
 Added amy.marlin to both environment tabs. All four username boxes are alphabetical: amy.marlin, ava.clark, john.dunbar, natalie.salesrep. Amy has separate native copy controls in each tab; both clipboard values were verified. Unique IDs and alphabetical order pass; no HTML outside username rows changed. Local only, no commit or push. Evidence: ../verification_upd/demo-usernames/amy/.

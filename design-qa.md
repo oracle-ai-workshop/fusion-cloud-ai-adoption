@@ -1,3 +1,7 @@
+## October 28, 2026 credential order — local review
+
+Both demo tabs now place the shared password immediately after john.dunbar, followed by amy.marlin, ava.clark and natalie.salesrep. Only existing credential row order changed; all values, copy controls and styling are preserved. Source validation and whitespace checks pass; browser DOM order verified for both panels. The stopped local preview server was restarted on port 4175. Evidence: ../verification_upd/demo-usernames/password-after-john/. Local only, no commit or push.
+
 ## October 25, 2026 workspace benefits — local review
 
 Added the two user-supplied six-item benefits lists immediately below the Sourcing Command Center and Project Delivery Assurance Workspace screenshots. Introductory product names and bullet labels are bold; all wording is verbatim. Titles, image bytes and image-viewer markup remain unchanged. Benefits text and source are recorded in lab-provenance.json; the source validator now checks the added text.

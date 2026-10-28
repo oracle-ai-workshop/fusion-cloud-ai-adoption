@@ -1,3 +1,9 @@
+## October 28, 2026 third demo environment — local review
+
+Added a third environment tab for eqha-dev10, with only john.dunbar and the supplied password. Existing URL, username and password row styling and copy controls are reused, with an official Redwood grid icon for the new tab. Primary and alternate panels are byte-for-byte unchanged. The third URL follows the existing hostname convention with the fscmUI/FuseWelcome route; destination/login was not tested.
+
+Browser checks verified three tabs, the third panel's exact credentials, both copy buttons, and ArrowRight wrapping from the third tab to the primary tab. Unique IDs, source/content validation, JavaScript syntax and whitespace checks passed. The modal is excluded from the workbook, so it was not rebuilt. Evidence: ../verification_upd/demo-third/. Local only; no commit or push.
+
 ## October 28, 2026 credential order — local review
 
 Both demo tabs now place the shared password immediately after john.dunbar, followed by amy.marlin, ava.clark and natalie.salesrep. Only existing credential row order changed; all values, copy controls and styling are preserved. Source validation and whitespace checks pass; browser DOM order verified for both panels. The stopped local preview server was restarted on port 4175. Evidence: ../verification_upd/demo-usernames/password-after-john/. Local only, no commit or push.
